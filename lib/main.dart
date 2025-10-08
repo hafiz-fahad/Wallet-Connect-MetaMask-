@@ -8,6 +8,7 @@ import 'services/wallet_service.dart';
 // Screens
 import 'screens/wallet_screen.dart';
 import 'screens/transaction_screen.dart';
+import 'screens/auction_screen.dart';
 
 // Constants
 import 'constants/app_theme.dart';
@@ -55,11 +56,24 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
+  String get _appBarTitle {
+    switch (_currentIndex) {
+      case 0:
+        return 'Wallet Connection';
+      case 1:
+        return 'Test Transaction';
+      case 2:
+        return 'NFT Auctions';
+      default:
+        return 'NFT Auction App';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(_currentIndex == 0 ? 'Wallet Connection' : 'Test Transaction'),
+        title: Text(_appBarTitle),
         centerTitle: true,
       ),
       body: IndexedStack(
@@ -71,6 +85,10 @@ class _MainScreenState extends State<MainScreen> {
             onAddressChanged: _updateAddress,
           ),
           TransactionScreen(
+            walletService: _walletService,
+            connectedAddress: _connectedAddress,
+          ),
+          AuctionScreen(
             walletService: _walletService,
             connectedAddress: _connectedAddress,
           ),
@@ -113,6 +131,10 @@ class _MainScreenState extends State<MainScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.send_rounded),
             label: 'Send',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.gavel_rounded),
+            label: 'Auctions',
           ),
         ],
       ),

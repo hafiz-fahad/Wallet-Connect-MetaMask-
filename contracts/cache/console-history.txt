@@ -1,0 +1,68 @@
+await (await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 2)).wait();
+const nft = await ethers.getContractAt("SimpleNFT", "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+// Approve NFT #2
+```
+console.log("✅ NFT #1 approved! You can now create auction.");
+// 4. Success message
+await tx.wait();
+// 3. Wait for confirmation
+const tx = await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1);
+// 2. Approve auction contract for Token ID 1
+const nft = await SimpleNFT.attach("0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+const SimpleNFT = await ethers.getContractFactory("SimpleNFT");
+// 1. Connect to your NFT contract
+```javascript
+```
+console.log("✅ NFT #1 approved! You can now create auction.");
+// 4. Success message
+await tx.wait();
+// 3. Wait for confirmation
+const tx = await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1);
+// 2. Approve auction contract for Token ID 1
+const nft = await SimpleNFT.attach("0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+const SimpleNFT = await ethers.getContractFactory("SimpleNFT");
+// 1. Connect to your NFT contract
+```javascript
+```
+console.log("✅ NFT #1 approved! You can now create auction.");
+// 4. Success message
+await tx.wait();
+// 3. Wait for confirmation
+const tx = await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1);
+// 2. Approve auction contract for Token ID 1
+const nft = await SimpleNFT.attach("0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+const SimpleNFT = await ethers.getContractFactory("SimpleNFT");
+// 1. Connect to your NFT contract
+```javascript
+console.log("✅ NFT #1 approved! You can now create auction.");
+// 4. Success message
+await tx.wait();
+// 3. Wait for confirmation
+const tx = await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1);
+// 2. Approve auction contract for Token ID 1
+const nft = await SimpleNFT.attach("0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+const SimpleNFT = await ethers.getContractFactory("SimpleNFT");
+// 1. Connect to your NFT contract
+```javascript
+console.log("✅ NFT #1 approved! You can now create auction.");
+await (await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1)).wait();
+// Approve Token ID 1 for auction
+const nft = await ethers.getContractAt("SimpleNFT", "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+// Get your NFT contract
+```
+console.log("✅ NFT #1 approved! You can now create auction.");
+await (await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1)).wait();
+// Approve Token ID 1 for auction
+const nft = await ethers.getContractAt("SimpleNFT", "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+// Get your NFT contract
+```javascript
+const nft = await ethers.getContractAt("SimpleNFT", "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+```
+console.log("✅ NFT #1 approved! You can now create auction.");
+await (await nft.approve("0x57856838dEEeBa2d621FC380a1eBd0586a345FCD", 1)).wait();
+// Approve Token ID 1 for auction
+const nft = await ethers.getContractAt("SimpleNFT", "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2");
+// Get your NFT contract
+```javascript
+.help
+.

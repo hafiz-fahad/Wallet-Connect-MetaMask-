@@ -1,0 +1,8 @@
+{
+  "network": "bnbTestnet",
+  "chainId": 97,
+  "nftContract": "0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2",
+  "auctionContract": "0x57856838dEEeBa2d621FC380a1eBd0586a345FCD",
+  "deployer": "0x572985CC28E2882889B6d364F53B14daD9a7F798",
+  "timestamp": "2025-10-08T10:38:38.937Z"
+}

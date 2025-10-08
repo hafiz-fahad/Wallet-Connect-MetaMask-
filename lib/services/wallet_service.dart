@@ -159,6 +159,50 @@ class WalletService {
     }
   }
 
+  Future<String> sendContractTransaction({
+    required String from,
+    required String to,
+    required String data,
+    required String value,
+    required BuildContext context,
+  }) async {
+    if (_session == null) {
+      throw Exception('No active session');
+    }
+    await _ensureInitialized();
+
+    final tx = {
+      'from': from,
+      'to': to,
+      'data': data,
+      'value': value,
+    };
+
+    try {
+      final result = await _web3App!.request(
+        topic: _session!.topic,
+        chainId: _selectedChain,
+        request: SessionRequestParams(
+          method: 'eth_sendTransaction',
+          params: [tx],
+        ),
+      );
+      if (result is String) return result; // tx hash
+      // Some wallets return JSON-RPC style object
+      if (result is Map && result['result'] is String) return result['result'] as String;
+      return result.toString();
+    } on WalletConnectError catch (e) {
+      _rethrowFriendly(e, context);
+      rethrow;
+    } on TimeoutException {
+      _showSnack(context, 'Request timed out. Open MetaMask and check pending requests.');
+      rethrow;
+    } catch (e) {
+      _showSnack(context, 'Failed to send contract transaction: $e');
+      rethrow;
+    }
+  }
+
   // Helpers
   Future<void> _launchWallet(String wcUri) async {
     final encoded = Uri.encodeComponent(wcUri);

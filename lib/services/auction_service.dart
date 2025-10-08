@@ -10,9 +10,9 @@ class AuctionService {
   late DeployedContract _auctionContract;
   late DeployedContract _nftContract;
   
-  // Contract addresses (update these after deployment)
-  static const String auctionContractAddress = '0x...'; // Deploy and update
-  static const String nftContractAddress = '0x...';     // Deploy and update
+  // Contract addresses (DEPLOYED on BNB Testnet)
+  static const String auctionContractAddress = '0x57856838dEEeBa2d621FC380a1eBd0586a345FCD';
+  static const String nftContractAddress = '0x8bd069d0141c8f866652f55cf1964F6C843Ce3f2';
   
   // RPC URLs
   static const String bnbTestnetRpc = 'https://data-seed-prebsc-1-s1.binance.org:8545';
