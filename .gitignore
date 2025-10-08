@@ -44,3 +44,6 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 /.env
+/contracts/node_modules/
+/contracts/cache/
+/contracts/artifacts/
